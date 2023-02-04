@@ -1,4 +1,5 @@
 // import StellarSdk from "stellar-sdk";
+import { Anchor } from "./Anchor";
 
 export enum NETWORKS {
   PUBLIC = "PUBLIC",
@@ -13,6 +14,6 @@ export class Wallet {
   }
 
   anchor(domain) {
-    return domain;
+    return new Anchor(domain);
   }
 }
