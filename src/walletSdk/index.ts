@@ -12,7 +12,7 @@ export class Wallet {
     this.network = network;
   }
 
-  anchor() {
-    return "anchor";
+  anchor(domain) {
+    return domain;
   }
 }
